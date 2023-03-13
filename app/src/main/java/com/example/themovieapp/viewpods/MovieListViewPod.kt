@@ -5,6 +5,7 @@ import android.util.AttributeSet
 import android.widget.FrameLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.themovieapp.adapters.MovieAdapter
+import com.example.themovieapp.data.vos.MovieVO
 import com.example.themovieapp.delegates.MovieViewHolderDelegate
 import com.example.themovieapp.delegates.ShowcaseViewHolderDelegate
 import com.google.android.material.chip.ChipDrawable.Delegate
@@ -20,6 +21,10 @@ class MovieListViewPod @JvmOverloads constructor(
     override fun onFinishInflate() {
 //        setUpMovieRecyclerView()
         super.onFinishInflate()
+    }
+
+    fun setData(movieList: List<MovieVO>){
+        mMovieAdapter.setNewData(movieList)
     }
 
     fun setUpMovieListViewPod(delegate: MovieViewHolderDelegate){

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
     
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivBannerImage"
-        app:srcCompat="@drawable/placeholder_wolverine_image"
+        tools:srcCompat="@drawable/placeholder_wolverine_image"
         android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
@@ -19,7 +19,7 @@
         android:layout_marginStart="@dimen/margin_medium_2"
         android:layout_marginBottom="@dimen/margin_large"
         android:elevation="@dimen/margin_small"
-        android:text="@string/lbl_movie_name"
+        tools:text="@string/lbl_movie_name"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="@dimen/text_heading_1x"

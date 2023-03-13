@@ -2,13 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/width_movie_item"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginStart="@dimen/margin_medium_2"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivMovieImage"
         android:layout_width="match_parent"
-        app:srcCompat="@drawable/placeholder_wolverine_image"
+        tools:srcCompat="@drawable/placeholder_wolverine_image"
         android:scaleType="centerCrop"
         android:layout_height="@dimen/height_movie_image"/>
 
@@ -17,7 +18,7 @@
         android:layout_below="@+id/ivMovieImage"
         android:layout_marginTop="@dimen/margin_card_medium_2"
         android:textSize="@dimen/text_regular_2x"
-        android:text="@string/lbl_logan"
+        tools:text="@string/lbl_logan"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:layout_width="wrap_content"
@@ -27,17 +28,17 @@
         android:id="@+id/tvMovieRating"
         android:layout_below="@+id/tvMovieName"
         android:layout_marginTop="@dimen/margin_small"
-        android:text="@string/lbl_rating"
+        tools:text="@string/lbl_rating"
         android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <RatingBar
-        android:id="@+id/rvMovieRating"
+        android:id="@+id/rbMovieRating"
         android:layout_below="@+id/tvMovieName"
         android:progressTint="@color/colorAccent"
         android:numStars="5"
-        android:rating="4.5"
+        tools:rating="4.5"
         android:layout_marginStart="@dimen/margin_medium"
         android:layout_marginTop="@dimen/margin_small"
         style="?attr/ratingBarStyleSmall"

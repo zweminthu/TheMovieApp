@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginStart="@dimen/margin_medium_2"
     android:layout_width="@dimen/width_actor"
     android:layout_height="@dimen/height_actor">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivBestActor"
-        app:srcCompat="@drawable/placeholder_actor"
+        tools:srcCompat="@drawable/placeholder_actor"
         android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
@@ -38,7 +39,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_alignBottom="@+id/btnLike"
-        android:text="YOU LIKE 15 MOVIES"
+        tools:text="YOU LIKE 15 MOVIES"
         android:textSize="@dimen/text_smaller"
         android:textStyle="bold"
         android:textColor="@color/colorSecondaryText"
@@ -55,7 +56,7 @@
         android:layout_alignStart="@id/btnLike"
         android:layout_marginEnd="@dimen/margin_card_medium_2"
         android:layout_marginBottom="@dimen/margin_medium"
-        android:text="Hugh Jackman"
+        tools:text="Hugh Jackman"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_width="wrap_content"
